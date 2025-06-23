@@ -48,8 +48,8 @@
       <label for="name">اسم العمل</label>
     </div>
     <script>
-      document.querySelector('#name').value +=
-        (new Date()).toLocaleDateString('ar-sa', options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+      document.querySelector("#name").value +=
+        (new Date()).toLocaleDateString("ar-sa", options = { weekday: "long", year: "numeric", month: "long", day: "numeric" })
     </script>
     <div class="row">
       <input type="checkbox" name="mono" id="mono" />
@@ -172,8 +172,8 @@
       <input class="color" type="color" onchange="board.setColor(this.value)">
     </label>
   </nav>
-  <script src="circularGridDrawing.js"></script>
-  <script src="kufi.js"></script>
+  <script type="module" src="dist/circularGridDrawing.js"></script>
+  <script type="module" src="dist/kufi.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(
